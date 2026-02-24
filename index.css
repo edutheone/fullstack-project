@@ -1,0 +1,169 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #222;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar {
+    background: #0b3d2e;
+    padding: 15px 0;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar .nav-links li a:hover,
+.navbar .nav-links li a.active {
+    color: #00d68f;
+}
+
+.apply-btn {
+    background: #00d68f;
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: white !important;
+}
+
+/* Navbar layout */
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Hero Section */
+.hero {
+    background: url("../img/hero-bg.jpg") center/cover no-repeat;
+    padding: 120px 0;
+    text-align: center;
+    color: white;
+    background-color: #0b3d2e; /* fallback */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #00d68f;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background: #00d68f;
+    color: white;
+}
+
+.btn-secondary {
+    background: white;
+    color: #0b3d2e;
+}
+
+/* Features Section */
+.features {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* CTA Section */
+.cta {
+    background: #0b3d2e;
+    color: white;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+.cta .btn-primary {
+    background: #00d68f;
+    padding: 12px 30px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: #0b3d2e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}

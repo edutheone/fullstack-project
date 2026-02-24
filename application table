@@ -1,0 +1,10 @@
+CREATE TABLE loan_applications (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    amount DECIMAL(10,2) NOT NULL,
+    monthly_income DECIMAL(10,2),
+    purpose VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    status VARCHAR(50) DEFAULT 'Pending Payment',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

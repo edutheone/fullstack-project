@@ -1,0 +1,10 @@
+CREATE TABLE payments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    loan_id INT NOT NULL,
+    checkout_request_id VARCHAR(255),
+    amount DECIMAL(10,2),
+    status VARCHAR(50) DEFAULT 'Pending',
+    result_desc VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
